@@ -1,0 +1,174 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link rel="stylesheet" href="css/main.css" -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/neo4jd3.min.css">
+    <title>IAM Syzygy</title>
+</head>
+
+<body>
+<div id="graph">
+</div>
+<div role="navigation" class="navbar navbar-default navbar-static-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <!-- form class="navbar-form" id="search" -->
+                            <div class="form-group" id="search">
+                                <input type="text" placeholder="Search for Principal" class="form-control" name="search">
+                            </div>
+                            
+                        <!--/form  -->
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-header col-sm-6 col-md-6">
+            	<div class="row">
+            		<div class="col-sm-6 col-md-6">
+            			<div class="navbar-brand">
+                    		<div class="brand">IAM Syzygy Users</div>
+                		</div>
+            		</div>
+            		<div class="col-sm-6 col-md-6">
+            			<a href="#goup" class="button">View Graph</a>
+            		</div>
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <div class="panel panel-default">
+            <div class="panel-heading">Search Results</div>
+            <table id="results" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>First name</th>
+                    <th>Last Name</th>
+                    <th>Employee Id</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="panel panel-default">
+            <div class="panel-heading" id="title">User Details</div>
+            <table id="userdetails" class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>Property Name</th>
+                    <th>Property Value</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div id="neo4j-d3-data"></div>
+<div id="neo4j-d3-data-1"></div>
+<a href="#search" id="goup">Go Up</a>
+<script type="text/javascript" src="js/neo4jd3.js"></script>
+
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script src="js/d3.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+function getUrlParams() {
+
+	  var paramMap = {};
+	  if (location.search.length == 0) {
+	    return paramMap;
+	  }
+	  var parts = location.search.substring(1).split("&");
+
+	  for (var i = 0; i < parts.length; i ++) {
+	    var component = parts[i].split("=");
+	    paramMap [decodeURIComponent(component[0])] = decodeURIComponent(component[1]);
+	  }
+	  return paramMap;
+	}
+	
+var params = getUrlParams();
+document.getElementById('search').value = params.search;
+	var zoop = function(id,apiGraphPath){
+		console.log(apiGraphPath);
+		var neo4jd3 = new Neo4jd3(id, {minCollision: 70, 
+			neo4jDataUrl: apiGraphPath,
+	    	nodeRadius: 20,
+	    	zoomFit: true,
+	    	onNodeDoubleClick: function(node){
+	    		switch(node.labels[0]){
+	    		case 'staff':
+	    			zoop("#neo4j-d3-data", "user/graphByPrincipal?name="+node.properties.principal);
+	    			break;
+	    		case 'user':
+	    			zoop("#neo4j-d3-data", "user/graphByPrincipal?name="+node.properties.principal);
+	    			break;
+	    		case 'company':
+	    			zoop("#neo4j-d3-data", "company/graphByCompanyName?name="+node.properties.companyname);
+	    			break;
+	    		case 'managed system':
+	    			zoop("#neo4j-d3-data", "mngdsystem/graphByName?name="+node.properties.name);
+	    			break;
+	    		case 'role':
+	    			zoop("#neo4j-d3-data", "role/graphByRoleName?name="+node.properties.rolename);
+	    			break;
+	    		case 'group':
+	    			zoop("#neo4j-d3-data", "group/graphByGroupName?name="+node.properties.grpname);
+	    			break;
+	    		case 'resource':
+	    			zoop("#neo4j-d3-data", "resource/graphByResourceName?name="+node.properties.resourcename);
+	    			break;
+	    		}
+	    	}
+		});
+	};
+	
+	var populate = function(apiGraphPath) {
+		$.get(apiGraphPath,
+                function (data) {
+
+                    var t = $("table#results tbody").empty();
+                    if (!data) return;
+        			var userProps = data.results[0].data[0].graph.nodes[0].properties;	
+					console.log(userProps);
+					$("<tr><td class='user'>" + userProps.firstname + "</td><td>" + userProps.lastname + "</td><td>" + userProps.employeeid + "</td></tr>").appendTo(t).click(function() {zoop('#neo4j-d3-data',"/user/graphByPrincipal?name="+userProps.principal)});
+					
+		    		var t1 = $("table#userdetails tbody").empty();
+		    		
+		    		$.each(userProps, function (key, value){
+		    			$("<tr><td class='user'>" + key + "</td><td>" + value + "</td></tr>").appendTo(t1);
+		    		});
+		    		
+                }, "json");
+        return false;
+	}
+	
+	$("#search").keypress(function(event) {
+	    if (event.which == 13) {
+	    	var e = $("#search").find("input[name=search]").val();
+	    	var apiPath = `user/graphByPrincipal?name=${e}`;
+			//var apiPath = `company/graphByCompanyName?name=OpenIAM`;
+	    	zoop('#neo4j-d3-data',apiPath);
+			populate(apiPath);
+	     }
+	});
+ 
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,1624 @@
+{
+    "results": [
+        {
+            "columns": [
+                "p",
+                "ID(n)"
+            ],
+            "data": [
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "213",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d605499d4016058add3a71735",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "Housing Finance Sal",
+                                    "title": "NA",
+                                    "employeeid": "517857",
+                                    "userid": "8a81678d605499d4016058add0041728",
+                                    "status": "ACTIVE",
+                                    "lastname": "Kumar"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "213",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d605499d4016058add3a71735",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "Housing Finance Sal",
+                                    "title": "NA",
+                                    "employeeid": "517857",
+                                    "userid": "8a81678d605499d4016058add0041728",
+                                    "status": "ACTIVE",
+                                    "lastname": "Kumar"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "749",
+                                "type": "BELONGS_TO",
+                                "startNode": "213",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "514",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Sharanappa",
+                                    "loginid": "8a81678d605499d4016058a7ca841179",
+                                    "prevloginip": "10.160.102.84",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Senior Sales Officer",
+                                    "classification": "Housing Finance Sal",
+                                    "employeeid": "517868",
+                                    "userid": "8a81678d605499d4016058a7c8771171",
+                                    "lastname": "Mallaiah"
+                                }
+                            },
+                            {
+                                "id": "213",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d605499d4016058add3a71735",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "Housing Finance Sal",
+                                    "title": "NA",
+                                    "employeeid": "517857",
+                                    "userid": "8a81678d605499d4016058add0041728",
+                                    "status": "ACTIVE",
+                                    "lastname": "Kumar"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1670",
+                                "type": "IS_STAFF_OF",
+                                "startNode": "213",
+                                "endNode": "514",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "213",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d605499d4016058add3a71735",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "Housing Finance Sal",
+                                    "title": "NA",
+                                    "employeeid": "517857",
+                                    "userid": "8a81678d605499d4016058add0041728",
+                                    "status": "ACTIVE",
+                                    "lastname": "Kumar"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "2613",
+                                "type": "PRESENT_IN",
+                                "startNode": "213",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1120",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "name": "ACTIVE DIRECTORY UAT",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "213",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d605499d4016058add3a71735",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "Housing Finance Sal",
+                                    "title": "NA",
+                                    "employeeid": "517857",
+                                    "userid": "8a81678d605499d4016058add0041728",
+                                    "status": "ACTIVE",
+                                    "lastname": "Kumar"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "2615",
+                                "type": "PRESENT_IN",
+                                "startNode": "213",
+                                "endNode": "1120",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "506",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d623dc9a00162435dfb650431",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Trade Advisor - Equity",
+                                    "classification": "",
+                                    "employeeid": "007058",
+                                    "userid": "8a81678d623dc9a00162435df4a70420",
+                                    "status": "ACTIVE",
+                                    "lastname": "Masal"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1027",
+                                "labels": [
+                                    "Group"
+                                ],
+                                "properties": {
+                                    "grpid": "8a81678d617f3e9401617f4083710000",
+                                    "managedsysid": "110",
+                                    "adgrptype": "SECURITY_GROUP",
+                                    "grpname": "ABM ALL Employees",
+                                    "typeid": "AD_GROUP"
+                                }
+                            },
+                            {
+                                "id": "506",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d623dc9a00162435dfb650431",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Trade Advisor - Equity",
+                                    "classification": "",
+                                    "employeeid": "007058",
+                                    "userid": "8a81678d623dc9a00162435df4a70420",
+                                    "status": "ACTIVE",
+                                    "lastname": "Masal"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "129",
+                                "type": "BELONGS_TO",
+                                "startNode": "506",
+                                "endNode": "1027",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "506",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d623dc9a00162435dfb650431",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Trade Advisor - Equity",
+                                    "classification": "",
+                                    "employeeid": "007058",
+                                    "userid": "8a81678d623dc9a00162435df4a70420",
+                                    "status": "ACTIVE",
+                                    "lastname": "Masal"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1020",
+                                "type": "BELONGS_TO",
+                                "startNode": "506",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "506",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d623dc9a00162435dfb650431",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Trade Advisor - Equity",
+                                    "classification": "",
+                                    "employeeid": "007058",
+                                    "userid": "8a81678d623dc9a00162435df4a70420",
+                                    "status": "ACTIVE",
+                                    "lastname": "Masal"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3076",
+                                "type": "PRESENT_IN",
+                                "startNode": "506",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1120",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "name": "ACTIVE DIRECTORY UAT",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "506",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d623dc9a00162435dfb650431",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Trade Advisor - Equity",
+                                    "classification": "",
+                                    "employeeid": "007058",
+                                    "userid": "8a81678d623dc9a00162435df4a70420",
+                                    "status": "ACTIVE",
+                                    "lastname": "Masal"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3078",
+                                "type": "PRESENT_IN",
+                                "startNode": "506",
+                                "endNode": "1120",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "619",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d636dcae601636e3434cc05d8",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "employeeid": "789410",
+                                    "userid": "8a81678d636dcae601636e342da405d1",
+                                    "lastname": "Gulahe"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1047",
+                                "labels": [
+                                    "Company"
+                                ],
+                                "properties": {
+                                    "companyid": "8a81678d60359109016044434d6a0102",
+                                    "companyname": "Aditya Birla Finance Limited",
+                                    "description": "Aditya Birla Finance Limited",
+                                    "alias": "ABFL",
+                                    "orgtypeid": "ORGANIZATION",
+                                    "internalcompanyid": "ABFL"
+                                }
+                            },
+                            {
+                                "id": "619",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d636dcae601636e3434cc05d8",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "employeeid": "789410",
+                                    "userid": "8a81678d636dcae601636e342da405d1",
+                                    "lastname": "Gulahe"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "207",
+                                "type": "WORKS_IN",
+                                "startNode": "619",
+                                "endNode": "1047",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "619",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d636dcae601636e3434cc05d8",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "employeeid": "789410",
+                                    "userid": "8a81678d636dcae601636e342da405d1",
+                                    "lastname": "Gulahe"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1151",
+                                "type": "BELONGS_TO",
+                                "startNode": "619",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1017",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "UAT",
+                                    "loginid": "8a81678d64645dff01646ef5b20c31f2",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "",
+                                    "title": "Support Executive",
+                                    "userid": "8a81678d5eb76ff6015ec1eb9265006d",
+                                    "employeeid": "",
+                                    "lastname": "ABFLIDM2",
+                                    "status": "ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "619",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d636dcae601636e3434cc05d8",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "employeeid": "789410",
+                                    "userid": "8a81678d636dcae601636e342da405d1",
+                                    "lastname": "Gulahe"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "2263",
+                                "type": "IS_STAFF_OF",
+                                "startNode": "619",
+                                "endNode": "1017",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "619",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d636dcae601636e3434cc05d8",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "employeeid": "789410",
+                                    "userid": "8a81678d636dcae601636e342da405d1",
+                                    "lastname": "Gulahe"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3506",
+                                "type": "PRESENT_IN",
+                                "startNode": "619",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "679",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64a6e2710164a750e63705dd",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Agency Manager",
+                                    "classification": "",
+                                    "employeeid": "521989",
+                                    "userid": "8a81678d64a6e2710164a750daa505cc",
+                                    "status": "ACTIVE",
+                                    "lastname": "Bansal"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "679",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64a6e2710164a750e63705dd",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Agency Manager",
+                                    "classification": "",
+                                    "employeeid": "521989",
+                                    "userid": "8a81678d64a6e2710164a750daa505cc",
+                                    "status": "ACTIVE",
+                                    "lastname": "Bansal"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1277",
+                                "type": "BELONGS_TO",
+                                "startNode": "679",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1120",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "name": "ACTIVE DIRECTORY UAT",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "679",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64a6e2710164a750e63705dd",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Agency Manager",
+                                    "classification": "",
+                                    "employeeid": "521989",
+                                    "userid": "8a81678d64a6e2710164a750daa505cc",
+                                    "status": "ACTIVE",
+                                    "lastname": "Bansal"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3983",
+                                "type": "PRESENT_IN",
+                                "startNode": "679",
+                                "endNode": "1120",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "679",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64a6e2710164a750e63705dd",
+                                    "typeid": "DEFAULT_USER",
+                                    "title": "Agency Manager",
+                                    "classification": "",
+                                    "employeeid": "521989",
+                                    "userid": "8a81678d64a6e2710164a750daa505cc",
+                                    "status": "ACTIVE",
+                                    "lastname": "Bansal"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3977",
+                                "type": "PRESENT_IN",
+                                "startNode": "679",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "1046",
+                                "labels": [
+                                    "Company"
+                                ],
+                                "properties": {
+                                    "companyid": "8a81678d603591090160443f677700f1",
+                                    "companyname": "Aditya Birla Capital Limited",
+                                    "description": "Aditya Birla Capital Limited",
+                                    "alias": "ABCL",
+                                    "orgtypeid": "ORGANIZATION",
+                                    "internalcompanyid": "ABCL"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "57",
+                                "type": "WORKS_IN",
+                                "startNode": "886",
+                                "endNode": "1046",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1555",
+                                "type": "BELONGS_TO",
+                                "startNode": "886",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "1017",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "UAT",
+                                    "loginid": "8a81678d64645dff01646ef5b20c31f2",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "",
+                                    "title": "Support Executive",
+                                    "userid": "8a81678d5eb76ff6015ec1eb9265006d",
+                                    "employeeid": "",
+                                    "lastname": "ABFLIDM2",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "2398",
+                                "type": "IS_STAFF_OF",
+                                "startNode": "886",
+                                "endNode": "1017",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3836",
+                                "type": "PRESENT_IN",
+                                "startNode": "886",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1120",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "name": "ACTIVE DIRECTORY UAT",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "886",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "manoj",
+                                    "loginid": "8a81678d6444f4cb01645f53de7833d0",
+                                    "typeid": "HR_OFF_ROLE",
+                                    "title": "Sr. Agency Manager",
+                                    "userid": "8a81678d6444f4cb01645f53c20233c1",
+                                    "employeeid": "000026",
+                                    "lastname": "b",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "3837",
+                                "type": "PRESENT_IN",
+                                "startNode": "886",
+                                "endNode": "1120",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": []
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1047",
+                                "labels": [
+                                    "Company"
+                                ],
+                                "properties": {
+                                    "companyid": "8a81678d60359109016044434d6a0102",
+                                    "companyname": "Aditya Birla Finance Limited",
+                                    "description": "Aditya Birla Finance Limited",
+                                    "alias": "ABFL",
+                                    "orgtypeid": "ORGANIZATION",
+                                    "internalcompanyid": "ABFL"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "90",
+                                "type": "WORKS_IN",
+                                "startNode": "900",
+                                "endNode": "1047",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1234",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d61be87770161c2ac224c0702",
+                                    "rolename": "R-System~~BANK_BRANCH_MASTER",
+                                    "roleid": "8a81678d624ddacd016257dd11e60824"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1491",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1234",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1192",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d5f2f0af5015f52ae4c011eee",
+                                    "rolename": "Miles~~Support",
+                                    "roleid": "8a81678d624ddacd016257d3700f0722"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1641",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1192",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1264",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d61be87770161c2ac224c0702",
+                                    "rolename": "R-System~~CRS_ADMIN",
+                                    "roleid": "8a81678d624ddacd016257dd13600839"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1475",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1264",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1187",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d5f2f0af5015f52ae4c011eee",
+                                    "rolename": "Miles~~Pass",
+                                    "roleid": "8a81678d624ddacd016257d36eea0713"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1192",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1187",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1186",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d5f2f0af5015f52ae4c011eee",
+                                    "rolename": "Miles~~Trans",
+                                    "roleid": "8a81678d624ddacd016257d36eb00710"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1193",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1186",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1183",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "rolename": "End User",
+                                    "roleid": "1",
+                                    "description": "Super Security Admin"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1501",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1183",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1203",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d5f2f0af5015f52ae4c011eee",
+                                    "rolename": "Miles~~Marketing",
+                                    "roleid": "8a81678d624ddacd016257d372750743"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1627",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1203",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1235",
+                                "labels": [
+                                    "Role"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d61be87770161c2ac224c0702",
+                                    "rolename": "R-System~~DSA",
+                                    "roleid": "8a81678d624ddacd016257dd12170827"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "1490",
+                                "type": "BELONGS_TO",
+                                "startNode": "900",
+                                "endNode": "1235",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1017",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "UAT",
+                                    "loginid": "8a81678d64645dff01646ef5b20c31f2",
+                                    "typeid": "DEFAULT_USER",
+                                    "classification": "",
+                                    "title": "Support Executive",
+                                    "userid": "8a81678d5eb76ff6015ec1eb9265006d",
+                                    "employeeid": "",
+                                    "lastname": "ABFLIDM2",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "2433",
+                                "type": "IS_STAFF_OF",
+                                "startNode": "900",
+                                "endNode": "1017",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1119",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "0",
+                                    "name": "OPENIAM",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "4009",
+                                "type": "PRESENT_IN",
+                                "startNode": "900",
+                                "endNode": "1119",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1120",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "110",
+                                    "name": "ACTIVE DIRECTORY UAT",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "4006",
+                                "type": "PRESENT_IN",
+                                "startNode": "900",
+                                "endNode": "1120",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "1123",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d61be87770161c2ac224c0702",
+                                    "name": "R-System(ABFL)",
+                                    "status": "IN-ACTIVE"
+                                }
+                            },
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "4005",
+                                "type": "PRESENT_IN",
+                                "startNode": "900",
+                                "endNode": "1123",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                },
+                {
+                    "graph": {
+                        "nodes": [
+                            {
+                                "id": "900",
+                                "labels": [
+                                    "User"
+                                ],
+                                "properties": {
+                                    "firstname": "Manoj",
+                                    "loginid": "8a81678d64dae6bd0164eb0e60a628d7",
+                                    "prevloginip": "10.160.102.191",
+                                    "typeid": "Generic_User",
+                                    "title": "Executive",
+                                    "employeeid": "000011",
+                                    "userid": "8a81678d64dae6bd0164eb0e467a28ce",
+                                    "lastname": "Gulahi"
+                                }
+                            },
+                            {
+                                "id": "1145",
+                                "labels": [
+                                    "ManagedSystem"
+                                ],
+                                "properties": {
+                                    "managedsysid": "8a81678d5f2f0af5015f52ae4c011eee",
+                                    "name": "MILES UAT",
+                                    "status": "ACTIVE"
+                                }
+                            }
+                        ],
+                        "relationships": [
+                            {
+                                "id": "4004",
+                                "type": "PRESENT_IN",
+                                "startNode": "900",
+                                "endNode": "1145",
+                                "properties": {}
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ],
+    "errors": []
+}
